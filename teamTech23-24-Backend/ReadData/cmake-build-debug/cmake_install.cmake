@@ -1,8 +1,8 @@
-# Install script for directory: /Users/cc/Downloads/teamTech23-24/teamTech23-24-Backend/ReadData
+# Install script for directory: /Users/gabrielatab/CLionProjects/teamTech23-24/teamTech23-24-Backend/ReadData
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/Users/cc/Downloads/teamTech23-24/teamTech23-24-Backend/ReadData/cmake-build-debug/install")
+  set(CMAKE_INSTALL_PREFIX "/Users/gabrielatab/CLionProjects/teamTech23-24/teamTech23-24-Backend/ReadData/cmake-build-debug/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/cc/Downloads/teamTech23-24/teamTech23-24-Backend/ReadData/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/gabrielatab/CLionProjects/teamTech23-24/teamTech23-24-Backend/ReadData/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
