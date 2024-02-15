@@ -99,16 +99,16 @@ int main() {
     createSchedule(schedule, heaps);
 
     // Create json file
-    std::ofstream file("satelliteSchedule.json");
-
+    std::ofstream file("satelliteSchedule.csv");
+    file<<"name, startTime, endTime, startLat, startLong, endLat, endLong"<<endl;
     for(int i = 0; i < schedule.size(); i++){
-        file << "{ \"name\":\"" << schedule.at(i).getName() << "\" , ";
-        file << "\"startTime\":\"" << schedule.at(i).getStartString() << "\" , ";
-        file << "\"endTime\":\"" << schedule.at(i).getEndString() << "\" , ";
-        file << "\"startLat\":\"" << schedule.at(i).getStartTimeLatitude() << "\" , ";
-        file << "\"startLong\":\"" << schedule.at(i).getStartTimeLongitude() << "\" , ";
-        file << "\"endLat\":\"" << schedule.at(i).getEndTimeLatitude() << "\" , ";
-        file << "\"endLong\":\"" << schedule.at(i).getEndTimeLongitude() << "\" }" << endl;
+        file << schedule.at(i).getName() <<",";
+        file << schedule.at(i).getStartString()<<"," ;
+        file << schedule.at(i).getEndString() <<",";
+        file << schedule.at(i).getStartTimeLatitude()<<",";
+        file << schedule.at(i).getStartTimeLongitude() <<",";
+        file <<  schedule.at(i).getEndTimeLatitude()<<",";
+        file <<  schedule.at(i).getEndTimeLongitude() << endl;
     }
 
     return 0;
