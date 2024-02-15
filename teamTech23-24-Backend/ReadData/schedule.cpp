@@ -39,7 +39,7 @@ int main() {
     //int numRanks = 3; //!!!change later!!!
     std::string buffer;
     //updated March 31,2022 1:48 pm est
-    std::fstream input("/Users/cc/Downloads/teamTech23-24/teamTech23-24-Backend/ReadData/celestrakList.txt"); // The file of satellites is found in the debug folder
+    std::fstream input("celestrakList.txt"); // The file of satellites is found in the debug folder
     string line1, line2;
 
     //Initialize variables for scheduler
